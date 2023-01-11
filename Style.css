@@ -1,0 +1,54 @@
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    z-index: 10;
+}
+nav li {
+    position: relative;
+    list-style: none;
+    background-color: dodgerblue;
+    color: blue;
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+}
+nav a, nav a:visited {
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0px;
+    color: lightblue;
+    background-color: blue;
+}
+nav a:hover {
+    color: mediumslateblue;
+    background-color: lightblue;
+}
+.dropdown-content {
+    position: absolute;
+    top:37px;
+    width:100%;
+    display:none;
+    z-index: 20;
+}
+.dropdown-content ul {
+    flex-direction: column;
+}
+nav li:hover .dropdown-content {
+    display: block;
+}
+body {
+    background-color:lightgrey;
+    color:dodgerblue;
+}
+video {
+    width:50px;
+    height:100px;
+}
+img {
+    width:575px;
+    height:500px;
+}
